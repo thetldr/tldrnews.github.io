@@ -24,11 +24,13 @@ defaults:
 - scope:
    path: ''
    type: drafts
-   values:
-     title: 'Drafts'
-     description: 'Sample draft templates for various post types'
-     author: Admin
-     layout: post
+  values:
+    title: "Drafts"
+    description: "Draft Templates"
+    author: Admin
+    layout: post
+    seo:
+      type: NewsArticle
 - scope:
    path: ''
    type: diractions
@@ -38,7 +40,7 @@ defaults:
     author: Admin
     layout: post
     seo:
-      type:NewsArticle
+      type: NewsArticle
 - scope:
     path: ''
     type: movements
@@ -58,7 +60,7 @@ defaults:
     author: Admin
     layout: post
     seo:
-      type:NewsArticle
+      type: NewsArticle
 - scope:
     path: ''
     type: posts
