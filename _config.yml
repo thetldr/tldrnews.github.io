@@ -87,8 +87,8 @@ name: The Tldr
 tagline:  A tldr digest of leftist media and politics
 description: A roundup tldr news, stories, profiles and perspective of the Left and the Progressive.
  Cooperatively published.
-url:httpes://tldrnews.github.io
-baseurl:https://tldrnews.github.io 
+url: httpes://tldrnews.github.io
+baseurl: https://tldrnews.github.io 
 source: "."
 plugins_dir: _plugins
 layouts_dir: _layouts
