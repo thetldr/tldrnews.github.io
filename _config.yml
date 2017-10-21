@@ -32,7 +32,6 @@ defaults:
     seo:
       type: NewsArticle
 - scope:
-- scope:
    path: ''
    type: diractions
   values:
