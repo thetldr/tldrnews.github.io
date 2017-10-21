@@ -12,12 +12,10 @@ contact: Antifa Anonymous(AA@aa.org)
 more: http://google.com/search?Antifa.
 layout: post
 organizer: AA1, phone #, email. 
-quote: This harmful policy needs to stop. Solidarity with
-the most impacted. 
+quote: This harmful policy needs to stop. 
 result: five arrests and unspecified damages/injuries.
 reaction: Liberals were not happy.
 success: participants made(will be making) dramatic action.
-Mainstream media paid attention.
 description: Sample Story.
 
 ---

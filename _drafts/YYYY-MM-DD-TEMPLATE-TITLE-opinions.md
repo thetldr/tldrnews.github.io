@@ -4,7 +4,7 @@ writer: Famous Author's Name
 date: 2017-10-13 00:00:00 -08:00
 when: 2017-11-01 00:00:00 -08:00
 publication: The Nation
-twitter: @handle 
+twitter: handle 
 link:
 tipster:
 layout: post
