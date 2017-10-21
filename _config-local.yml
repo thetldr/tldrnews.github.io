@@ -1,0 +1,171 @@
+---
+title: The Tldr
+timezone: America/Los_Angeles
+collections:
+  authors:
+    title: Authors
+    output: true
+  diractions:
+    title: Diractions
+    output: true
+  posts:
+    title: Posts
+    output: true
+  movements:
+    title: Movements
+    output: true
+  opinions:
+    title: Opinions
+    output: true
+  drafts:
+    title: Drafts
+    output: true
+defaults:
+- scope:
+   path: ''
+   type: diractions
+  values:
+    title: "Direct Actions"
+    description: "Direct action and protest News"
+    author: Admin
+    layout: post
+    seo:
+      type:NewsArticle
+- scope:
+    path: ''
+    type: movements
+  values:
+    title: 'Movements'
+    description: 'Profiles and stories'
+    author: Admin
+    layout: post
+    seo:
+      type: NewsArticle
+- scope:
+    path: ''
+    type: opinions
+  values:
+    title: "Leftist Perspetives"
+    description: "A review of leftist and progressive opinion voices"
+    author: Admin
+    layout: post
+    seo:
+      type:NewsArticle
+- scope:
+    path: ''
+    type: posts
+  values:
+    title: 'Progressive News Digest'
+    description: 'A roundup of leftist and progressive stories'
+    image: ''
+    author: Admin
+    layout: post
+    seo:
+      type: NewsArticle
+- scope:
+    path: ''
+    type: authors
+  values:
+    permalink: "/author/:title/"
+    layout: author
+    twitter: 
+    email: 
+    metatags: noindex, follow
+    sitemap: false
+permalink: pretty
+name: The Tldr
+tagline:  A tldr digest of leftist media and politics
+description: A roundup tldr news, stories, profiles and perspective of the Left and the Progressive.
+ Cooperatively published.
+url: 
+baseurl: 
+source: "."
+plugins_dir: _plugins
+layouts_dir: _layouts
+data_dir: _data
+includes_dir: _includes
+
+upload_path: 'file:///E:/software/temp/tldr.github.io/tldr.github.io/'
+create_path: 'file:///E:/software/temp/tldr.github.io/tldr.github.io/'
+edit_path: 'file:///E:/software/temp/tldr.github.io/tldr.github.io/'
+
+kramdown:
+  smart_quotes:
+  - apos
+  - apos
+  - quot
+  - quot
+
+ampdir: amp
+
+exclude: [vendor]
+
+
+
+algolia:
+  application_id: MIBL6QUKGV
+  index_name: tldr
+  read_only_api_key: c9e72b9370c19a28a645ef2a12037ec2
+  record_css_selector: p,li,blockquote
+  excluded_files:
+  - 404.html
+  - about.md
+  - week.html
+  - all.html
+  - allhome.html
+  - allposts.html
+  - allmovements.html
+  - alldiractions.html
+  - allopinions.html
+  - archive.md
+  - "/archives/*"
+  - atom.xml
+  - faq.md
+  - .html
+  - index.html
+  - press.md
+  - rss.xml
+  - styles.css
+  - today.html
+   - "/meta/*"
+  - license.html
+  - license.txt
+  settings:
+    attributesToIndex:
+    - unordered(text)
+    - posted_at
+    - title
+    - h1
+    distinct: false
+extlinks:
+  attributes:
+    target: _blank
+    rel: noopener
+    class: external
+  
+jekyll_admin:
+  hidden_links:
+  - pages
+  - staticfiles
+  - datafiles
+  - configuration
+jekyll-archives:
+  enabled:
+  - year
+  - month
+  layouts:
+    year: year-archive
+    month: month-archive
+  permalinks:
+    year: "/archive/:year/"
+    month: "/archive/:year/:month/"
+gems:
+- jekyll-gist
+- jekyll-redirect-from
+- github-pages
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-extlinks
+- jekyll-archives
+- algoliasearch

@@ -1,0 +1,10 @@
+  {% if page.type == 'year' %}
+    {% seo title=false %}
+    <title>{{ page.date | date: "%Y" }} Archive | {{ site.title}}</title>
+  {% elsif page.type == 'month' %}
+    {% seo title=false %}
+    <title>{{ page.date | date: "%B %Y" }} Archive | {{ site.title}}</title>
+  {% else %}
+    {% seo %} 
+  {% endif %}
+  {% if page.metatags %} <meta name="robots" content="{{page.metatags}}">{% endif %}

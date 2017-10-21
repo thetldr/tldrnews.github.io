@@ -1,0 +1,33 @@
+  {% if page.path contains '_posts' %}
+    {% if page.last_modified %}
+    {% assign modified = page.last_modified %}
+    {% else %}
+    {% assign modified = page.date %}
+    {% endif %}
+    <meta content="{{ modified | date_to_xmlschema }}" itemprop="dateModified" />
+  {% endif %}
+  
+    {% if page.path contains '_movements' %}
+    {% if page.last_modified %}
+    {% assign modified = page.last_modified %}
+    {% else %}
+    {% assign modified = page.date %}
+    {% endif %}
+    <meta content="{{ modified | date_to_xmlschema }}" itemprop="dateModified" />
+  {% endif %}
+    {% if page.path contains '_opinions' %}
+    {% if page.last_modified %}
+    {% assign modified = page.last_modified %}
+    {% else %}
+    {% assign modified = page.date %}
+    {% endif %}
+    <meta content="{{ modified | date_to_xmlschema }}" itemprop="dateModified" />
+  {% endif %}
+    {% if page.path contains '_diractions' %}
+    {% if page.last_modified %}
+    {% assign modified = page.last_modified %}
+    {% else %}
+    {% assign modified = page.date %}
+    {% endif %}
+    <meta content="{{ modified | date_to_xmlschema }}" itemprop="dateModified" />
+  {% endif %}

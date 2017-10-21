@@ -1,0 +1,70 @@
+---
+title: 
+layout: default
+---
+<!-- MailChimp -->
+{% include email.html %}
+
+<!--End mc_embed_signup-->
+
+
+
+<div class="posts">
+  {% for post in site.movements limit:1 %}
+  <article class="post">
+    <div>
+        <small>
+		  <i > </i> 
+	      <a class="fa fa-file" aria-hidden="true" href="{{site.create_path}}_drafts" target="_blank">Create New Movements Post</a> | 
+	      <a class="fa fa-cloud-upload" aria-hidden="true" href="{{site.upload_path}}_uploads" target="_blank">Upload</a>
+               filename format: YYYY-MM-DD-TITLE-movements.md 
+		<hr>
+	    </small>
+    </div>
+    <h2 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}:
+      <span class="post-small">{{ post.description }}</span></a>
+    </h2>
+	<div>
+	{% assign author = site.authors | where: 'title', post.author | first %}
+    {% if author %}
+      <div class="byline"><a href="{{ author.url }}">{{ author.title }}</a></div>
+    {% endif %}
+	
+    <time datetime="{{ post.last_modified | date_to_xmlschema }}" class="post-date">
+       {{ post.date | date: "%m/%d/%Y" }}
+       <small>
+	      <em>Updated: {{ post.last_modified | date: "%m/%d/%Y %r %Z"}}</em>
+	    </small>
+		 <div>
+		 <a class="fa fa-twitter" aria-hidden="true" href="https://twitter.com/intent/tweet?url={{site.baseurl}}{{post.url}}&hashtags={{post.title}}">Tweet</a> | 
+		 <a class="fa fa-edit" aria-hidden="true" href="{{site.edit_path}}{{ post.path }}" target="_blank">Edit</a> 
+		<!-- Your share button code -->
+        </div>
+    </time>
+   
+       
+     </div>
+    {{ post.content | extlinks }}
+	
+	  <div>
+	    <small>
+	      <h4 style="text-align: center;"><a href="{{site.baseurl}}/allmovements">Movements Archive</a></h4>
+	    </small>
+	   </div>
+    
+   </article>
+  {% endfor %} 
+</div>
+ 
+
+
+ <div class="next-prev">
+    {% if page.previous.url %}
+      <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+    {% endif %}
+    {% if page.next.url %}
+      <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+    {% endif %}
+  </div>

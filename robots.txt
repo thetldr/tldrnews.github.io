@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://whatisgood.github.io/sitemap.xml
+ Disallow: /author/

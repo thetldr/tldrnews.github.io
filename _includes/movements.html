@@ -1,0 +1,43 @@
+---
+title: What Is Good!-Direct Action and Movements News, Analysis and Digest
+layout: default
+---
+
+ 
+
+<!-- MailChimp -->
+{% include email.html %}
+
+<!--End mc_embed_signup-->
+
+
+
+<div class="movements">
+  {% for movement in site.movements limit:2 %}
+  <article class="movement">
+    <h2 class="movement-title">
+      <a href="{{ site.baseurl }}{{ movement.url }}">
+        {{ movement.title }}:
+      <span class="movement-small">{{ movement.description }}</span></a>
+    </h2>
+    <time datetime="{{ movement.last_modified | date_to_xmlschema }}" class="movement-date">
+       {{ movement.date | date: "%m/%d/%Y" }}
+    <small><em>Updated: {{ movement.last_modified | date: "%m/%d/%Y %r %Z"}} 
+    </em></small>
+  </time>
+ 
+    {{ movement.content | extlinks }}
+  </article>
+  {% endfor %} 
+
+    <div class="next-prev">
+    {% if page.previous.url %}
+      <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+    {% endif %}
+    {% if page.next.url %}
+      <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+    {% endif %}
+  </div>
+
+
+</div> 

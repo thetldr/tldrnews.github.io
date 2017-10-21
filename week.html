@@ -1,0 +1,255 @@
+---
+title: Tldr Weekly Digest
+layout: default
+---
+
+
+<!-- MailChimp -->
+{% include email.html %}
+
+<div class="postexcerpt">
+  
+    <article class="post">
+     <em>Weekly briefing:</em>
+    
+        <dl> 
+		<dt> Latest News</dt>
+	   {% for post in site.posts limit:7 %}
+			 
+			
+			
+				<dd>{{ post.title }}: {{post.description}}</dd>
+			
+			
+		{% endfor %}
+		<dt> Movement News </dt>
+		{% for post in site.movements limit:7 %}
+			 
+			
+				 <dd>{{ post.title }}: {{post.description}}</dd>
+			
+			
+		{% endfor %}
+		<dt> Opinions </dt>
+		{% for post in site.opinions limit:7 %}
+			 
+			
+				 <dd>{{ post.title }}: {{post.description}}</dd>
+			
+		
+		{% endfor %}
+		<dt>Direct Actions</dt>
+		{% for post in site.diractions limit:7 %}
+			
+			
+				 <dd>{{ post.title }}: {{post.description}}</dd>
+			
+			
+		{% endfor %}
+		
+		</dl>
+	</article>
+	
+</div>
+
+
+<div>
+	<small>
+		<div>
+			<h4 style="text-align: center;"class="post-heading">
+				<a href="{{ site.baseurl }}/posts"> Latest News...  </a>
+			</h4>
+		</div>
+	</small>
+</div>
+<div class="Latests">
+   
+  {% for post in site.posts limit:7 %}
+  
+	<article class="post">
+		<h2 class="post-title">
+			<a href="{{ site.baseurl }}{{ post.url }}">
+		{{ post.title }}:
+	  
+				<span class="post-small">{{ post.description }}</span>
+			</a>
+		</h2>
+		<div>
+	{% assign author = site.authors | where: 'title', post.author | first %}
+	{% if author %}
+	  
+			<div class="byline">By 
+				<a href="{{ author.url }}">{{ author.title }}</a>
+			</div>
+	{% endif %}
+	
+			<time datetime="{{ post.last_modified | date_to_xmlschema }}" class="post-date">
+	   {{ post.date | date: "%m/%d/%Y" }}
+	
+				<small>
+					<div>
+						<em>Updated: {{ post.last_modified | date: "%m/%d/%Y %r %Z"}}</em>
+					</div>
+				</small>
+				<div>
+					<a class="fa fa-twitter" aria-hilien="true" class="twitter-share-button" href="https://twitter.com/intent/tweet?url={{site.baseurl}}{{post.url}}&hashtags={{post.title}}">Tweet</a> | 
+			  
+					<a class="fa fa-edit" aria-hilien="true" href="{{site.edit_path}}{{ post.path }}" target="_blank">Edit</a>
+				</div>
+			</time>
+		</div>
+ 
+	{{ post.content | extlinks }}
+  
+	</article>
+  {% endfor %} 
+
+</div>
+<div>
+	<small>
+		<div>
+			<h4 style="text-align: center;"class="post-heading">
+				<a href="{{ site.baseurl }}/movements"> Movements News...  </a>
+			</h4>
+		</div>
+	</small>
+</div>
+<div class="movements">
+  
+  {% for post in site.movements limit:7 %}
+   
+	<article class="post">
+		<h2 class="post-title">
+			<a href="{{ site.baseurl }}{{ post.url }}">
+		{{ post.title }}:
+	  
+				<span class="post-small">{{ post.description }}</span>
+			</a>
+		</h2>
+		<div>
+	{% assign author = site.authors | where: 'title', post.author | first %}
+	{% if author %}
+	  
+			<div class="byline">
+				<a href="{{ author.url }}">{{ author.title }}</a>
+			</div>
+	{% endif %}
+	
+			<time datetime="{{ post.last_modified | date_to_xmlschema }}" class="post-date">
+	   {{ post.date | date: "%m/%d/%Y" }}
+		
+				<small>
+					<div>
+						<em>Updated: {{ post.last_modified | date: "%m/%d/%Y %r %Z"}} </em>
+					</div>
+				</small>
+				<div>
+					<a class="fa fa-twitter" aria-hilien="true" class="twitter-share-button" href="https://twitter.com/intent/tweet?url={{site.baseurl}}{{post.url}}&hashtags={{post.title}}">Tweet</a> | 
+			  
+					<a class="fa fa-edit" aria-hilien="true" href="{{site.edit_path}}{{ post.path }}" target="_blank">Edit</a>
+				</div>
+			</time>
+		</div>
+	{{ post.content | extlinks }}
+  
+	</article>
+  {% endfor %}
+ 
+</div>
+<div>
+	<h4 style="text-align: center;"class="post-heading">
+		<a href="{{ site.baseurl }}/opinions"> Opinions...  </a>
+	</h4>
+</div>
+<div class="opinions">  
+  {% for post in site.opinions limit:7 %}
+  
+	<article class="post">
+		<h2 class="post-title">
+			<a href="{{ site.baseurl }}{{ post.url }}">
+		{{ post.title }}:
+	  
+				<span class="post-small">{{ post.description }}</span>
+			</a>
+		</h2>
+		<div>
+	{% assign author = site.authors | where: 'title', post.author | first %}
+	{% if author %}
+	  
+			<div class="byline">
+				<a href="{{ author.url }}">{{ author.title }}</a>
+			</div>
+	{% endif %}
+	
+	
+			<time datetime="{{ post.last_modified | date_to_xmlschema }}" class="post-date">
+	   {{ post.date | date: "%m/%d/%Y" }}
+	
+				<small>
+					<div>
+						<em>Updated: {{ post.last_modified | date: "%m/%d/%Y %r %Z"}} </em>
+					</div>
+				</small>
+				<div>
+					<a class="fa fa-twitter" aria-hilien="true" class="twitter-share-button" href="https://twitter.com/intent/tweet?url={{site.baseurl}}{{post.url}}&hashtags={{post.title}}">Tweet</a> | 
+		 
+					<a class="fa fa-edit" aria-hilien="true" href="{{site.edit_path}}{{ post.path }}" target="_blank">Edit</a>
+				</div>
+			</time>
+		</div>
+	{{ post.content | extlinks }}
+  
+	</article>
+  {% endfor %}
+
+</div>
+
+
+<div>
+	<h4 style="text-align: center;"class="post-heading">
+		<a href="{{ site.baseurl }}/diractions"> Direct Action News...  </a>
+	</h4>
+</div>
+<div class="diractions">
+  
+  {% for post in site.diractions limit:7 %}
+  
+	<article class="post">
+		<h2 class="post-title">
+			<a href="{{ site.baseurl }}{{ post.url }}">
+		{{ post.title }}:
+	  
+				<span class="post-small">{{ post.description }}</span>
+			</a>
+		</h2>
+		<div>
+	{% assign author = site.authors | where: 'title', post.author | first %}
+	{% if author %}
+	  
+			<div class="byline">
+				<a href="{{ author.url }}">{{ author.title }}</a>
+			</div>
+	{% endif %}
+	
+	
+			<time datetime="{{ post.last_modified | date_to_xmlschema }}" class="post-date">
+	   {{ post.date | date: "%m/%d/%Y" }}
+	
+				<small>
+					<div>
+						<em>Updated: {{ post.last_modified | date: "%m/%d/%Y %r %Z"}} </em>
+					</div>
+				</small>
+				<div>
+					<a class="fa fa-twitter" aria-hilien="true" class="twitter-share-button" href="https://twitter.com/intent/tweet?url={{site.baseurl}}{{post.url}}&hashtags={{post.title}}">Tweet</a> | 
+		 
+					<a class="fa fa-edit" aria-hilien="true" href="{{site.edit_path}}{{ post.path }}" target="_blank">Edit</a>
+				</div>
+			</time>
+		</div>
+	{{ post.content | extlinks }}
+  
+	</article>
+  {% endfor %}
+
+</div>

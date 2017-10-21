@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="container content">
+       <nav class="wig-pagination">
+          <div class="menu">
+            <div><a href="{{ site.baseurl }}/">Home</a> | </div>
+			<div><a href="{{ site.baseurl }}/posts">News</a> | </div>              
+            <!--<div>{% for post in site.posts limit:1 %} <a href="{{ site.baseurl }}{{ post.url }}">Today</a>{% endfor %} | </div> -->
+			<div><a href="{{ site.baseurl }}/movements">Movements</a> | </div>              
+            <!--<div>{% for post in site.posts limit:1 offset:1 %} <a href="{{ site.baseurl }}{{ post.url }}">Yesterday</a>{% endfor %} | </div>-->
+			<div><a href="{{ site.baseurl }}/opinions">Perspectives</a> | </div> 
+			<div><a href="{{ site.baseurl }}/diractions">Actions</a> | </div>  
+			<div><a href="{{ site.baseurl }}/week">Weekly Digest</a></div>  
+			
+			<!--<div>
+                        <div> Scoop</div>
+			<div><a href="{{ site.baseurl }}/bookrevs"> Only on WIG(coming soon)</a></div>
+			<!--<div><a href="{{ site.baseurl }}/subscribe">Subscribe</a> </div> | 
+			<!--<div><a href="{{ site.baseurl }}/original">Original(coming Soon)</a></div> | 
+			 <div><a href="{{ site.baseurl }}/media">Media(coming soon!)</a></div> | 
+			<div><a href="{{ site.baseurl }}/you"> You</a></div>
+			
+          </div>-->
+        </nav>
+      </div>
+
+      <header class="masthead">
+        <h3 class="masthead-title">
+          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+        </h3>
+        <div class="wig-tagline">
+           <small>{{ site.tagline }} 
+           <br><span class="site-updated">Last updated: <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: "%-m/%-d/%Y %l:%M %p %Z" }}</time>
+          </span>
+     
+         </div>
+
+        <div class="wig-search">
+          <div class="outer-wrapper">
+            <div class="input-wrapper">
+              <i class="fa fa-search fa-css" aria-hidden="true"></i>
+              <input type="text" class="algolia__input js-algolia__input" autocomplete="off" name="query" placeholder="Search wig..." />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main> 
+        <!-- ALGOLIA -->
+        <div class="wig-search-results">
+          <div class="algolia__search-content js-algolia__search-content">
+            <h6>Search Results</h6>
+            <div class="posts algolia__results"></div>
+          </div>
+        </div>
+
+        <div class="algolia__initial-content js-algolia__initial-content">
+          {{ content | extlinks }}</div>
+        <!-- END ALGOLIA -->
+      </main>
+      {% include foot.html %}
