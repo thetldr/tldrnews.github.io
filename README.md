@@ -1,7 +1,7 @@
 ---
 title: The Tldr 
 date: 2017-10-13
-description: The tldr echosystem. 
+description: The tldr build system. 
 published: true
 description:
 ---
@@ -11,8 +11,8 @@ Project forked from [wtfjht](https://github.com/mkiser/WTFJHT/).
 
   **TODO:**
   
-       * Add commenting system.
-	   * Edit README.md
+      
+       * Continuosly edit README.md
        * Create wiki page for sources/publications
        * Create project road map wiki page
        * Start publishing stories.
