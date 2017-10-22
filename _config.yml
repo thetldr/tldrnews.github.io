@@ -94,9 +94,9 @@ plugins_dir: _plugins
 layouts_dir: _layouts
 data_dir: _data
 includes_dir: _includes
-upload_path: https://github.com/whatisgood/tldrnews.github.io/upload/master/
-create_path: https://github.com/whatisgood/tldrnews.github.io/new/master/
-edit_path: https://github.com/whatisgood/tldrnews.github.io/edit/master/
+upload_path: https://github.com/tldrnews/tldrnews.github.io/upload/master/
+create_path: https://github.com/tldrnews/tldrnews.github.io/new/master/
+edit_path: https://github.com/tldrnews/tldrnews.github.io/edit/master/
 
 
 kramdown:
