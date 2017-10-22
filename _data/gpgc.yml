@@ -6,6 +6,6 @@ label_name: Post Comments
 label_color: 666666
 github_application:
   client_id: dc4c622a819b776da8ee
-  code_authenticator:  https://tldr1.herokuapp.com/authonticate/
+  code_authenticator:  https://tldr1.herokuapp.com/authenticate/
   callback_url: https://tldrnews.github.io/public/html/gpgc_redirect/index.html
 enable_diagnostics: true
