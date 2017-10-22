@@ -1,11 +1,11 @@
-repo_owner: whatisgood
-repo_name: whatisgood.github.io
+repo_owner: tldrnews
+repo_name: tldrnews.github.io
 disabled: false
 use_show_action: false
 label_name: Post Comments
 label_color: 666666
 github_application:
   client_id: dc4c622a819b776da8ee
-  code_authenticator: curl https://tldr1.herokuapp.com/authonticate
-  callback_url: http://http://localhost:4000/public/html/gpgc_redirect/index.html
-enable_diagnostics: true
+  code_authenticator:  https://tldr1.herokuapp.com/authonticate
+  callback_url: http://tldrnews.github.io/public/html/gpgc_redirect/index.html
+enable_diagnostics: false
