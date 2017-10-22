@@ -12,6 +12,7 @@ collections:
     title: Posts
     output: true
   movements:
+    permalink: /:date/:name
     title: Movements
     output: true
   opinions:
