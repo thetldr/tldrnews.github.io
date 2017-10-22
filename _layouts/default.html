@@ -30,18 +30,18 @@
         <h3 class="masthead-title">
           <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
         </h3>
-        <div class="wig-tagline">
+        <div class="tldr-tagline">
            <small>{{ site.tagline }} 
            <br><span class="site-updated">Last updated: <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: "%-m/%-d/%Y %l:%M %p %Z" }}</time>
           </span>
      
          </div>
 
-        <div class="wig-search">
+        <div class="tldr-search">
           <div class="outer-wrapper">
             <div class="input-wrapper">
               <i class="fa fa-search fa-css" aria-hidden="true"></i>
-              <input type="text" class="algolia__input js-algolia__input" autocomplete="off" name="query" placeholder="Search wig..." />
+              <input type="text" class="algolia__input js-algolia__input" autocomplete="off" name="query" placeholder="Search tldr..." />
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@
 
       <main> 
         <!-- ALGOLIA -->
-        <div class="wig-search-results">
+        <div class="tldr-search-results">
           <div class="algolia__search-content js-algolia__search-content">
             <h6>Search Results</h6>
             <div class="posts algolia__results"></div>
