@@ -1,5 +1,5 @@
 ---
-title: 
+title: Movements Profiles
 date: 2017-01-23 00:00:00 -08:00
 name: Black Lives Matter
 datefounded: 2013-07-13
