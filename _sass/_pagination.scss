@@ -1,0 +1,28 @@
+// Pagination
+//
+// Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+// there are no more previous or next posts to show.
+
+.wig-pagination {
+  color: #fff;
+  background-color: #222;
+  padding: .7em 1em;
+  font-size: .65em;
+
+  a {
+    padding: 0 .2em;
+    color: #3db2fd;
+  }
+}
+
+.next-prev {
+    text-align: center;
+    padding: 1em 0em 0em 0em;
+    font-size: 1.25em;
+
+  a {
+    padding: 0 .25em;
+    color: #0093f0;
+  }
+}
+

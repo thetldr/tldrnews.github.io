@@ -1,0 +1,80 @@
+// Masthead
+//
+// Super small header above the content for site name and short description.
+
+.masthead {
+  background-color: #000;
+  padding-bottom: .5em;
+  -webkit-font-smoothing: antialiased;
+
+
+  .masthead-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    padding: .7em 1em .3em 1em;
+
+    a {
+      color: inherit;
+    }
+  }
+
+    .wig-tagline {
+      margin: 0 auto;
+      text-align: center;
+
+      small {
+        font-weight: 400;
+        color: $gray-3;
+
+        a {
+          color: #3db2fd;
+        }
+      }
+      .site-updated {
+        font-size: .6em;
+        padding: .5em 1em;
+        color: $gray-3;
+      }
+    }
+
+
+
+  .post-small {
+    color: $gray-4;
+    font-weight: 500;
+  }
+  
+  .wig-search {
+    margin: 1em auto;
+    max-width: 40rem;
+    padding: 0 1rem;
+
+    input {
+      background-color: #222;
+      border-radius: 3px;
+      border: 1px solid $gray-4;
+      color: #fff;
+    }
+  }
+}
+
+  .social-icons {
+    margin: 1em auto;
+    text-align: center;
+    margin-bottom: 0;
+
+    .icon {
+      margin: 2em .25em 0 .25em;
+      display: inline;
+
+      img {
+        width: 35px;
+      }
+
+    }
+
+  }

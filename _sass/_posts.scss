@@ -1,0 +1,167 @@
+// Posts and pages
+//
+// Each post is wrapped in `.post` and is used on default and post layouts. Each
+// page is wrapped in `.page` and is only used on the page layout.
+
+.posts {
+  margin-top: 1em;
+}
+
+.page,
+.post {
+  margin: 20px auto 0 auto;
+  max-width: 40rem;
+  padding: 1rem;
+  border-top: 1px solid $gray-2;
+
+  p {
+    font-size: 1em;
+
+    a {
+      color: #0093f0;
+    }
+
+  }
+
+  ul {
+    border: 1px solid rgba(0, 147, 240, .20);
+    padding: 1em;
+    margin: 0 0 2em 1em;
+    border-radius: 3px;
+    background-color: rgba(0, 147, 240, .03);
+  }
+
+  li {
+    font-size: .8em;
+    color: $gray-3;
+    list-style: none;
+      
+      .jekyll-twitter-plugin,
+      blockquote {
+        margin-left: 0;
+      }
+      
+    a {
+      color: #0093f0;
+    }
+  }
+
+  li + li {
+    margin-top: 1.25em;
+  }
+
+  p + p {
+    margin-top: 2em;
+  }
+
+  .jekyll-twitter-plugin {
+    margin: 0 0 1em 1em;
+  }
+
+  blockquote {
+    border: 1px solid rgba(255,220,134,.35);
+    border-left: 5px solid #ffdc86;
+    background-color: rgba(255,220,134,.1);
+    margin-left: 1em;
+
+    strong {
+      color: #7a7a7a;
+    }
+
+    p {
+      font-size: .8em;
+
+      &:first-of-type {
+        color: #FFB600;
+        font-size: .65em;
+        font-weight: bold;
+      }
+    }
+
+    p + p {
+      margin-top: -1em;
+    }
+  }
+}
+
+.page {
+  border-top: 0px;
+}
+
+// Blog post or page title
+.page-title,
+.post-title,
+.post-title a {
+  color: #0093f0;
+}
+.page-title,
+.post-title {
+  margin-top: 0;
+}
+
+// Meta data line below post title
+.post-date {
+  display: block;
+  color: #9a9a9a;
+  font-size: .75em;
+  margin: 1em 0 2em 0;
+}
+
+.byline {
+  display: block;
+  color: #9a9a9a;
+  font-size: .75em;
+  margin: 0;
+}
+
+// Related posts
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+
+
+  h3 {
+    margin-top: 0;
+  }
+
+  li {
+    small {
+      font-size: 75%;
+      color: #999;
+    }
+
+    a:hover {
+      color: #268bd2;
+      text-decoration: none;
+
+      small {
+        color: inherit;
+      }
+    }
+  }
+}
+
+/* responsive videos */
+.video figure {
+  position: relative;
+  nowhitespace: afterproperty;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video iframe, .video object, .video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
