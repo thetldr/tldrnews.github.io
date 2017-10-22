@@ -1,5 +1,5 @@
 ---
-title: Direct Action Stories
+title: Direct Action
 date: 2017-01-23 00:00:00 -08:00
 when: 2017-11-01 00:00:00 -08:00
 where: "1600 Pensylvania Ave Washington, DC"
