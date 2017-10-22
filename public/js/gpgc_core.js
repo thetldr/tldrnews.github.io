@@ -672,7 +672,7 @@ function verifyCss() {
   var fetchedCss = false;
   for (var i = 0; i < css.length; i++) {
 	if (!css[i].href)
-	   break;
+	   continue;
     if (css[i].href.match("gpgc_styles.css")) {
       foundCssInHead = true;
       if (css[i].cssRules.length > 0) {
