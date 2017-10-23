@@ -1,25 +1,26 @@
 ---
 title: Direct Action
-date: 2017-01-23 00:00:00 -08:00
-when: 2017-11-01 00:00:00 -08:00
-where: "1600 Pensylvania Ave Washington, DC"
+date: {}
+when: {}
+where: '1600 Pensylvania Ave Washington, DC'
 who: participants
 what: cause
-action: "Window smashing | demand letter delivery | sit-in"
-type: "Property Damage | "
+action: Window smashing | demand letter delivery | sit-in
+type: 'Property Damage | '
 arrestrisk: High
 contact: Antifa Anonymous(AA@aa.org)
-url: http://google.com/search?Antifa.
+url: 'http://google.com/search?Antifa.'
 layout: post
-organizer: AA1 and CONTACT INFO. 
+organizer: AA1 and CONTACT INFO.
 quote: This harmful policy needs to stop. Solidarity with
-result: "five arrests and unspecified damages/injuries"
+result: five arrests and unspecified damages/injuries
 reaction: Liberals were not happy.
-success: "participants made(will be making) dramatic action"
+success: participants made(will be making) dramatic action
 description: Past and present direct action stories
+published: true
 ---
 
-**tldr**  publishes a roundup of stories of direct actions,
+**The Tldr**  publishes a roundup of stories of direct actions,
 protests and solidarity events. 
 If you want to submit or upload stories or events go to [tldr](https://tldr.github.io/diractions) direct actions page.
 
