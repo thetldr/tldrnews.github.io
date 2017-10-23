@@ -20,5 +20,5 @@ description:
 
 ---
 
-**wigX**, as is stylized, seeks and publishes profiles and stories on movements, leftist groups, and progressive organizations. 
+**The Tldr** seeks and publishes profiles and stories on movements, leftist groups, and progressive organizations. 
 [Here](https://github.com/whatisgood/tldr.github.io/_drafts/YYYY-MM-DD-TEMPLATE-TITLE-movements.md) is a sample draft for the Black Lives Matter movement. Contributors can submit movement profiles, stories and news by either pulling a request for a new post or uploading a file on [this](https://whatisgood.github.io/movements) page. 
